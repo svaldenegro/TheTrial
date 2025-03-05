@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 79a06c2f0dcb2014293046cdb66cd90c
+timeCreated: 1485195071
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 85292
+  packageName: FREE Preview of Animations for RPG - Human
+  packageVersion: 1.0
+  assetPath: Assets/rpg animations/scripts/UI_sword.cs
+  uploadId: 167653

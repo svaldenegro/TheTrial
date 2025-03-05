@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0ac33fa970b9bfd4a9f408491d8e106b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 22100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157744
+  packageName: Basic Motions
+  packageVersion: 2.3.3
+  assetPath: Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Basic Motions
+    Scene/Animator Controllers/HumanF-Basic@HandClap.overrideController
+  uploadId: 733978

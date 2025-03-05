@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f5162d2563f6ed047882bee010b6f9cb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 22100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 157744
+  packageName: Basic Motions
+  packageVersion: 2.3.3
+  assetPath: Assets/Kevin Iglesias/Human Animations/Unity Demo Scenes/Basic Motions
+    Scene/Animator Controllers/HumanF-Basic@Roll.overrideController
+  uploadId: 733978
