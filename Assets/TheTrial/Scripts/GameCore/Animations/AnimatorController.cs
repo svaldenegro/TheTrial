@@ -94,10 +94,5 @@ namespace TheTrial.GameCore.Animations
             }
             return false;
         }
-
-        public void Aim(Quaternion direction)
-        {
-            
-        }
     }
 }

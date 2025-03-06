@@ -36,6 +36,7 @@ namespace TheTrial.Players
 
         private InputAction _characterMovement, _cameraMovement, _jump, _roll, _charge, _primary, _secondary;
         private Quaternion _rotation;
+        private float _secondaryHold;
 
         private void Start()
         {
@@ -54,8 +55,6 @@ namespace TheTrial.Players
             }
 
             _secondary = InputSystem.actions.FindAction("Secondary");
-            _secondary.performed += SecondaryActionHold;
-            _secondary.canceled += SecondaryActionRelease;
             _charge = InputSystem.actions.FindAction("Charge");
             if (chargeAction is not null)
             {
@@ -66,32 +65,6 @@ namespace TheTrial.Players
             // Lock the cursor
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-        }
-
-        private void SecondaryActionHold(InputAction.CallbackContext context)
-        {
-            if (context.time < controllerModeHoldTime)
-                return;
-            if (controller.overrideMovement)
-            {
-                _controllerMode = ControllerMode.Free;
-                aimAction.CancelAim();
-                return;
-            }
-
-            _controllerMode = ControllerMode.Focusing;
-            aimAction.Aim(camera.Direction);
-        }
-
-        private void SecondaryActionRelease(InputAction.CallbackContext context)
-        {
-            aimAction.CancelAim();
-            if (context.time > controllerModeHoldTime)
-            {
-                _controllerMode = ControllerMode.Free;
-                return;
-            }
-            _controllerMode = ControllerMode.Free;
         }
 
         private void PrimaryAction(InputAction.CallbackContext context)
@@ -115,7 +88,44 @@ namespace TheTrial.Players
         private void Update()
         {
             MoveCamera();
+            SecondaryActionManagement();
+            MoveController();
+        }
 
+        private void SecondaryActionManagement()
+        {
+            if (_secondary.IsPressed())
+            {
+                _secondaryHold += Time.deltaTime;
+                if (_secondaryHold < controllerModeHoldTime)
+                    return;
+                
+                Debug.DrawRay(transform.position + transform.rotation * Vector3.one, camera.Rotation * Vector3.forward,
+                    Color.red);
+                _controllerMode = aimAction.Aim(camera.Rotation) ? ControllerMode.Focusing : ControllerMode.Free;
+            }
+            else
+            {
+                if (_secondaryHold == 0)
+                    return;
+
+                if (_secondaryHold < controllerModeHoldTime)
+                {
+                    // Do stuff for short press
+                }
+                else
+                {
+                    // Do stuff for long press
+                    aimAction.Cancel();
+                }
+
+                _controllerMode = ControllerMode.Free;
+                _secondaryHold = 0;
+            }
+        }
+
+        private void MoveController()
+        {
             switch (_controllerMode)
             {
                 case ControllerMode.Free:

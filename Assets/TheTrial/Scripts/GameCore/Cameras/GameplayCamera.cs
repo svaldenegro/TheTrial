@@ -28,6 +28,7 @@ namespace TheTrial.GameCore.Cameras
         private float _distance;
 
         public Quaternion Direction => Quaternion.Euler(0, _yaw, 0);
+        public Quaternion Rotation => transform.rotation;
 
         private void Start()
         {

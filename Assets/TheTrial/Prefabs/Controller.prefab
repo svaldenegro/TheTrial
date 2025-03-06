@@ -155,9 +155,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c12d9f99a9a7680318e59d69d4dd9292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 4799201100848296780}
+  animator: {fileID: 5583065075124110232}
+  animatorController: {fileID: 4799201100848296780}
+  ikController: {fileID: 1006131871520170662}
   movement: {fileID: 11400000, guid: da8651603c3f22dc985f20a068d5145b, type: 2}
   focusing: {fileID: 11400000, guid: 3f9e65e3627f68ebeb163025524b23c1, type: 2}
+  aimEulerOffset: {x: 0, y: 0, z: -78.54}
+  aimPositionOffset: {x: 0, y: 0, z: 2}
+  loadSpeed: 2
+  debug: 0
+  debugEuler: {x: 0, y: 0, z: 0}
 --- !u!1001 &2022571099713781257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -532,6 +539,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fb1437c6ddc8dd6d4b3a895ae12fce7c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1825308868907096292}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fb1437c6ddc8dd6d4b3a895ae12fce7c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1006131871520170662}
   m_SourcePrefab: {fileID: 100100000, guid: fb1437c6ddc8dd6d4b3a895ae12fce7c, type: 3}
 --- !u!1 &1211737006328251224 stripped
 GameObject:
@@ -568,6 +578,19 @@ MonoBehaviour:
   controller: {fileID: 8461546004660927038}
   animator: {fileID: 5583065075124110232}
   rootMotionForce: 2.75
+--- !u!114 &1006131871520170662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211737006328251224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 217ec66aab974166882b6f24b86d2e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 5583065075124110232}
 --- !u!4 &1989224134136322530 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fb1437c6ddc8dd6d4b3a895ae12fce7c, type: 3}
