@@ -36,6 +36,8 @@ namespace TheTrial.Players
 
         private InputAction _characterMovement, _cameraMovement, _jump, _roll, _charge, _primary, _secondary;
         private Quaternion _rotation;
+        [ShowInInspector]
+        private Transform _target;
         private float _secondaryHold;
 
         private void Start()
