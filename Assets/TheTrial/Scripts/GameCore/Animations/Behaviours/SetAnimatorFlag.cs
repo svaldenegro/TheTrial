@@ -8,17 +8,17 @@ namespace TheTrial.GameCore.Animations.Behaviours
     public class SetAnimatorFlag : StateMachineBehaviour
     {
         [NonSerialized] // 
-        public AnimatorInfo animatorInfo;
+        public AnimatorController animator;
         public ScriptableAnimatorFlag animatorFlag;
 
-        public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+        public override void OnStateEnter(Animator _, AnimatorStateInfo stateInfo, int layerIndex)
         {
-            animatorInfo.Add(animatorFlag);
+            animator.Add(animatorFlag);
         }
 
-        public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+        public override void OnStateExit(Animator _, AnimatorStateInfo stateInfo, int layerIndex)
         {
-            animatorInfo.Subtract(animatorFlag);
+            animator.Subtract(animatorFlag);
         }
     }
 }

@@ -21,17 +21,7 @@ namespace TheTrial.GameCore.Controllers
         [SerializeField] //
         private float gravityMagnetForce = 0.01f;
 
-        private Vector3 displacement, movement, gravity;
-
-        public override Vector3 Movement
-        {
-            set => movement += value;
-        }
-
-        public override Vector3 Displacement
-        {
-            set => displacement += value;
-        }
+        private Vector3 _gravity;
 
         public override Quaternion Rotation
         {
@@ -43,19 +33,17 @@ namespace TheTrial.GameCore.Controllers
         
         public override void Jump(float force)
         {
-            gravity = -gravityForce * force;
+            _gravity = -gravityForce * force;
         }
 
-        private void Update()
+        protected override void Move(Vector3 displacement, float deltaTime)
         {
-            controller.Move((displacement.sqrMagnitude < 0.0001f ? movement * (Speed * Time.deltaTime) : displacement) + gravity);
+            controller.Move(displacement + _gravity);
+            
             if (controller.isGrounded)
-                gravity = gravityForce * gravityMagnetForce;
+                _gravity = gravityForce * gravityMagnetForce;
             else
-                gravity += gravityForce * (gravityMultiplier * Time.deltaTime);
-
-            displacement = Vector3.zero;
-            movement = Vector3.zero;
+                _gravity += gravityForce * (gravityMultiplier * deltaTime);
         }
 
         private void OnValidate()
@@ -66,8 +54,8 @@ namespace TheTrial.GameCore.Controllers
         // Print gravity force in the editor
         private void OnGUI()
         {
-            GUI.Label(new Rect(10, 10, 400, 40), displacement.ToString());
-            GUI.Label(new Rect(10, 50, 400, 40), displacement.sqrMagnitude.ToString(CultureInfo.InvariantCulture));
+            // GUI.Label(new Rect(10, 10, 400, 40), _displacement.ToString());
+            // GUI.Label(new Rect(10, 50, 400, 40), _displacement.sqrMagnitude.ToString(CultureInfo.InvariantCulture));
         }
     }
 }

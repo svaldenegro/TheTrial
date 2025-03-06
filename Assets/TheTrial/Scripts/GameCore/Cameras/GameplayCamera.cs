@@ -23,15 +23,15 @@ namespace TheTrial.GameCore.Cameras
         [FormerlySerializedAs("recoverSpeed")] [SerializeField] //
         private float recoverySpeed = 1f;
 
-        private float yaw;
+        private float _yaw;
         [ShowInInspector] //
-        private float distance;
+        private float _distance;
 
-        public Quaternion Direction => Quaternion.Euler(0, yaw, 0);
+        public Quaternion Direction => Quaternion.Euler(0, _yaw, 0);
 
         private void Start()
         {
-            distance = offsetDistance;
+            _distance = offsetDistance;
         }
 
         private void LateUpdate()
@@ -43,18 +43,18 @@ namespace TheTrial.GameCore.Cameras
             if (Physics.Raycast(pivot, -transform.forward, out var hit, offsetDistance, mask))
             {
                 transform.position = hit.point;
-                distance = hit.distance;
+                _distance = hit.distance;
             }
             else
             {
-                distance = Mathf.MoveTowards(distance, offsetDistance, recoverySpeed * Time.deltaTime);
-                transform.position = pivot - transform.forward * distance;
+                _distance = Mathf.MoveTowards(_distance, offsetDistance, recoverySpeed * Time.deltaTime);
+                transform.position = pivot - transform.forward * _distance;
             }
         }
 
         public void Move(Vector2 movement)
         {
-            yaw += movement.x;
+            _yaw += movement.x;
             pitch.Value -= movement.y;
         }
     }

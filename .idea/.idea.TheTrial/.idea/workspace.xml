@@ -4,11 +4,109 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9290d97a-51dd-48fc-b598-d6aae8c5114d" name="Changes" comment="" />
+    <list default="true" id="9290d97a-51dd-48fc-b598-d6aae8c5114d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Animations/IKController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Animations/IKController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheTrial/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TheTrial/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/T_Base_Normal.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/T_Base_Normal.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/T_Base_ORM.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/T_Base_ORM.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/T_S_none.BMP.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/T_S_none.BMP.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/T_S_none.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/T_S_none.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/Tile_Blue_1.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/Tile_Blue_1.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/Tile_Blue_2.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/Tile_Blue_2.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/Tile_Brown_1.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/Tile_Brown_1.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/Tile_Gray_1.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/Tile_Gray_1.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/Tile_Green_1.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/Tile_Green_1.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/Tile_Orange_1.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/Tile_Orange_1.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/Tile_Red_1.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Base/Tile_Red_1.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Body_MetallicOcclusion.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Body_MetallicOcclusion.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Body_Normal.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Body_Normal.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Body_OcclusionRoughnessMetallic.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Body_OcclusionRoughnessMetallic.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Body_Red_BaseColor.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Body_Red_BaseColor.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Body_Red_BaseColor_smoothness.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Body_Red_BaseColor_smoothness.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Body_White_BaseColor.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Body_White_BaseColor.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Body_White_BaseColorSmoothness.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Body_White_BaseColorSmoothness.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Head_MetallicOcclusion.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Head_MetallicOcclusion.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Head_Normal.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Head_Normal.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Head_OcclusionRoughnessMetallic.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Head_OcclusionRoughnessMetallic.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Head_Red_BaseColor.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Head_Red_BaseColor.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Head_Red_BaseColorSmoothness.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Head_Red_BaseColorSmoothness.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Head_White_BaseColor.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Head_White_BaseColor.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Head_White_BaseColorSmoothness.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Character/T_Head_White_BaseColorSmoothness.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Body_Albedo.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Body_Albedo.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Body_MetallicSmooth.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Body_MetallicSmooth.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Body_Normal.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Body_Normal.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Body_Occlusion.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Body_Occlusion.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Eye_Albedo.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Eye_Albedo.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Eye_Normal.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Eye_Normal.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Hair_Albedo.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Hair_Albedo.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Hair_MetallicSmooth.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Hair_MetallicSmooth.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Hair_Normal.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Hair_Normal.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Head_Albedo.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Head_Albedo.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Head_MetallicSmooth.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Head_MetallicSmooth.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Head_Normal.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/DemoCharacter/Ellen_Head_Normal.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Dirt/T_Dirt_01.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Dirt/T_Dirt_01.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/EditorResources/AAPIcon64.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/EditorResources/AAPIcon64.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/FX/SimpleFoam.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/FX/SimpleFoam.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Grids/T_G_04.BMP.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Grids/T_G_04.BMP.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Grids/T_Grid_01.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Grids/T_Grid_01.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Grids/T_Grid_02.BMP.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Grids/T_Grid_02.BMP.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Grids/T_grid_03.BMP.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Grids/T_grid_03.BMP.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Block_Barrier_1_RedStrips_BaseColor.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Block_Barrier_1_RedStrips_BaseColor.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Block_Barrier_1_RedStrips_MaskMap.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Block_Barrier_1_RedStrips_MaskMap.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Block_Barrier_1_RedStrips_Normal.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Block_Barrier_1_RedStrips_Normal.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Cone_Clean_BaseColor.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Cone_Clean_BaseColor.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Cone_Clean_MaskMap.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Cone_Clean_MaskMap.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Cone_Clean_Normal.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Cone_Clean_Normal.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Pedestrian_Barrier_1_Clear_BaseColor.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Pedestrian_Barrier_1_Clear_BaseColor.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Pedestrian_Barrier_1_Clear_MaskMap.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Pedestrian_Barrier_1_Clear_MaskMap.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Pedestrian_Barrier_1_Clear_Normal.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Pedestrian_Barrier_1_Clear_Normal.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Water_Barricade_Clear_1_BaseColor.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Water_Barricade_Clear_1_BaseColor.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Water_Barricade_Clear_1_MaskMap.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Water_Barricade_Clear_1_MaskMap.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Water_Barricade_Clear_1_Normal.tga.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/MiscProps/Water_Barricade_Clear_1_Normal.tga.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Normals/T_01_normal.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Normals/T_01_normal.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Normals/T_02_Normal.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Normals/T_02_Normal.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Normals/T_03_Normal.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Normals/T_03_Normal.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Normals/T_04_Normal.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Normals/T_04_Normal.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Normals/T_Water_N.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Normals/T_Water_N.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Signs/T_Sign_01.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Signs/T_Sign_01.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Signs/T_Sign_02.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Signs/T_Sign_02.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Signs/T_Sign_03.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Signs/T_Sign_03.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Signs/T_Sign_04.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Signs/T_Sign_04.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Signs/T_Sign_04_Add.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Signs/T_Sign_04_Add.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Signs/T_Sign_05.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Signs/T_Sign_05.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Signs/T_Sign_05_Add.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/Signs/T_Sign_05_Add.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/T_1m.TGA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AmplifyAnimationPack/Textures/T_1m.TGA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/ExplosiveLLC/RPG Character Mecanim Animation Pack/Animations/Armed/RPG-Character@Armed-Idle-Pistol-R.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/ExplosiveLLC/RPG Character Mecanim Animation Pack/Animations/Armed/RPG-Character@Armed-Idle-Pistol-R.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/Grruzam Powerful Sword Animation(Great Sword, Katana)/Animation/M_Katana_Blade/2_Attacks/0__3Combos/M_katana_Blade@Attack_3Combo_1_Move.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/Grruzam Powerful Sword Animation(Great Sword, Katana)/Animation/M_Katana_Blade/2_Attacks/0__3Combos/M_katana_Blade@Attack_3Combo_1_Move.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/Grruzam Powerful Sword Animation(Great Sword, Katana)/Animation/M_Katana_Blade/2_Attacks/0__3Combos/M_katana_Blade@Attack_3Combo_2_Move.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/Grruzam Powerful Sword Animation(Great Sword, Katana)/Animation/M_Katana_Blade/2_Attacks/0__3Combos/M_katana_Blade@Attack_3Combo_2_Move.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/Grruzam Powerful Sword Animation(Great Sword, Katana)/Animation/M_Katana_Blade/2_Attacks/0__3Combos/M_katana_Blade@Attack_3Combo_3_short distance.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/Grruzam Powerful Sword Animation(Great Sword, Katana)/Animation/M_Katana_Blade/2_Attacks/0__3Combos/M_katana_Blade@Attack_3Combo_3_short distance.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/Kevin Iglesias/Soldier Animations/Animations/Movement/Handgun/Handgun@Walk01.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/Kevin Iglesias/Soldier Animations/Animations/Movement/Handgun/Handgun@Walk01.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ControllerDebugRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ControllerDebugRoom.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Animations/Animators/HumanoidController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Animations/Animators/HumanoidController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Actions/ChargeAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Actions/ChargeAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Actions/JumpAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Actions/JumpAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Actions/RollAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Actions/RollAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Animations/AnimatorInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Animations/AnimatorInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Animations/Behaviours/SetAnimatorFlag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Animations/Behaviours/SetAnimatorFlag.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Animations/ControllerRootMotion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Animations/ControllerRootMotion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Animations/HumanoidAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Animations/AnimatorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Animations/HumanoidAnimator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Animations/AnimatorController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Cameras/GameplayCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Cameras/GameplayCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Controllers/ControllerBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Controllers/ControllerBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Controllers/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Controllers/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/Players/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/Players/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/TheTrial/Scripts/Data/ScriptableData/ScriptableAnimatorFlag.cs" root0="FORCE_HIGHLIGHTING" />
@@ -21,6 +119,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2tlt88Icn1rFCIn4GA0blULbhRY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -28,12 +129,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -107,6 +210,9 @@
       <workItem from="1741115224139" duration="3000" />
       <workItem from="1741115232912" duration="3000" />
       <workItem from="1741115243922" duration="8989000" />
+      <workItem from="1741197458583" duration="14290000" />
+      <workItem from="1741222091628" duration="7231000" />
+      <workItem from="1741268008213" duration="2503000" />
     </task>
     <servers />
   </component>
@@ -122,5 +228,9 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

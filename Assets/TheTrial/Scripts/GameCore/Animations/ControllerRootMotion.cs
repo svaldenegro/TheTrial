@@ -18,7 +18,7 @@ namespace TheTrial.GameCore.Animations
         public bool ApplyRootMotion
         {
             get => enabled;
-            set => enabled = value;
+            set => controller.overrideMovement = enabled = value;
         }
 
         private void Start()
@@ -35,7 +35,12 @@ namespace TheTrial.GameCore.Animations
 
         private void OnAnimatorMove()
         {
-            controller.Displacement = animator.deltaPosition * rootMotionForce;
+            controller.MovementOverride = animator.deltaPosition * rootMotionForce;
+            controller.transform.rotation *= animator.deltaRotation;
+
+            // Opcional: Resetear la posición local del hijo para evitar doble transformación
+            transform.localPosition = Vector3.zero;
+            transform.localRotation = Quaternion.identity;
         }
         
         // Auto assign OnValidate

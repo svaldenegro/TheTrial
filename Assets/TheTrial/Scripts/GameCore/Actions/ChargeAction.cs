@@ -3,6 +3,7 @@ using TheTrial.Data.ScriptableData;
 using TheTrial.GameCore.Animations;
 using TheTrial.GameCore.Controllers;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace TheTrial.GameCore.Actions
 {
@@ -12,10 +13,7 @@ namespace TheTrial.GameCore.Actions
         private ControllerBase controller;
 
         [SerializeField] //
-        private HumanoidAnimator animator;
-
-        [SerializeField] //
-        private AnimatorInfo animatorInfo;
+        private AnimatorController animator;
 
         [SerializeField] //
         private ScriptableAnimatorFlag movementFlag;
@@ -28,16 +26,17 @@ namespace TheTrial.GameCore.Actions
 
         public bool CanCharge()
         {
-            return controller.IsGrounded && animatorInfo.HasFlag(movementFlag);
+            return controller.IsGrounded && animator.HasFlag(movementFlag);
         }
 
         public void Charge()
         {
-            controller.extraSpeed = chargeForce;
-            animator.Charge(true);
-
-            if (controller.IsGrounded && animatorInfo.HasFlag(chargeFlag))
+            if (controller.IsGrounded && (animator.HasFlag(movementFlag) || animator.HasFlag(chargeFlag)))
+            {
+                controller.extraSpeed = chargeForce;
+                animator.Charge(true);
                 return;
+            }
             
             Cancel();
         }

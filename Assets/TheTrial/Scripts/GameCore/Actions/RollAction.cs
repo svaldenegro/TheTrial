@@ -2,6 +2,7 @@ using TheTrial.Data.ScriptableData;
 using TheTrial.GameCore.Animations;
 using TheTrial.GameCore.Controllers;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace TheTrial.GameCore.Actions
 {
@@ -10,15 +11,13 @@ namespace TheTrial.GameCore.Actions
         [SerializeField]
         private ControllerBase controller;
         [SerializeField]
-        private HumanoidAnimator animator;
-        [SerializeField]
-        private AnimatorInfo animatorInfo;
+        private AnimatorController animator;
         [SerializeField]
         private ScriptableAnimatorFlag movementFlag;
 
         public void Roll()
         {
-            if (!controller.IsGrounded || !animatorInfo.HasFlag(movementFlag)) return;
+            if (!controller.IsGrounded || !animator.HasFlag(movementFlag)) return;
             
             animator.Roll();
         }
