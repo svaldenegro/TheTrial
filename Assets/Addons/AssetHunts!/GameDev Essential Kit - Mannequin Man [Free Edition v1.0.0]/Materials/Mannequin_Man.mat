@@ -331,7 +331,7 @@ Material:
     - _OutlinePixelSizeType: 0
     - _OutlineTextureLOD: 5
     - _OutlineTextureType: 2
-    - _OutlineWidth: 0.63
+    - _OutlineWidth: 0.74
     - _OutlineWidthAffectedByViewDistance: 0
     - _OutlineZPostionInCamera: 0
     - _OutlineZSmooth: 0.19

@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9290d97a-51dd-48fc-b598-d6aae8c5114d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/Players/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/Players/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheTrial/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TheTrial/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/AssetHunts!/GameDev Essential Kit - Mannequin Man [Free Edition v1.0.0]/Materials/Mannequin_Man.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/AssetHunts!/GameDev Essential Kit - Mannequin Man [Free Edition v1.0.0]/Materials/Mannequin_Man.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Addons/ExplosiveLLC/RPG Character Mecanim Animation Pack/Animations/Armed/RPG-Character@Armed-Land.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Addons/ExplosiveLLC/RPG Character Mecanim Animation Pack/Animations/Armed/RPG-Character@Armed-Land.FBX.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ControllerDebugRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ControllerDebugRoom.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PC_Renderer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Models/DebugBox.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Models/DebugBox.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Shaders/ColoredToony.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Shaders/ColoredToony.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/TheTrialHaidAssets.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Models/TheTrialHaidAssets.blend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +46,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "com.codeium.enabled": "true",
     "git-widget-placeholder": "Seba",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -120,6 +130,7 @@
       <workItem from="1741197458583" duration="14290000" />
       <workItem from="1741222091628" duration="7231000" />
       <workItem from="1741268008213" duration="18573000" />
+      <workItem from="1741312870846" duration="2511000" />
     </task>
     <servers />
   </component>
