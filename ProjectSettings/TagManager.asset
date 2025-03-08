@@ -16,8 +16,8 @@ TagManager:
   - Controller
   - Player
   - Enemy
-  - 
-  - 
+  - Barrier
+  - Target
   - 
   - 
   - 

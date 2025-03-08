@@ -39,10 +39,9 @@ namespace TheTrial.Players
         [Title("Hidden", "Private variables")] // 
         [ShowInInspector, ReadOnly]
         private ControllerMode _controllerMode = ControllerMode.Free;
-
         private InputAction _characterMovement, _cameraMovement, _jump, _roll, _charge, _primary, _secondary;
         private Quaternion _rotation;
-        [ShowInInspector, ReadOnly] private Transform _target;
+        [ShowInInspector, ReadOnly] private Target _target;
         private float _secondaryHold;
 
         private void Start()
@@ -74,27 +73,22 @@ namespace TheTrial.Players
             Cursor.visible = false;
         }
 
-        private void PrimaryAction(InputAction.CallbackContext context)
-        {
-            primaryAction.Activate();
-        }
-
-        private void ChargeCanceled(InputAction.CallbackContext context)
-        {
-            chargeAction.Cancel();
-        }
-
-        private void Charge(InputAction.CallbackContext context)
-        {
-            chargeAction.Charge();
-        }
-
+        private void PrimaryAction(InputAction.CallbackContext context) => primaryAction.Activate();
+        private void ChargeCanceled(InputAction.CallbackContext context) => chargeAction.Cancel();
+        private void Charge(InputAction.CallbackContext context) => chargeAction.Charge();
         private void Roll(InputAction.CallbackContext context) => rollAction.Roll();
         private void Jump(InputAction.CallbackContext context) => jumpAction.Jump();
+
+        private void UnlockController(ControllerMode mode)
+        {
+            _controllerMode = mode;
+            camera.StopLookingAt();
+        }
 
         private void Update()
         {
             MoveCamera();
+            
             SecondaryActionManagement();
             MoveController();
         }
@@ -109,7 +103,7 @@ namespace TheTrial.Players
 
                 Debug.DrawRay(transform.position + transform.rotation * Vector3.one, camera.Rotation * Vector3.forward,
                     Color.red);
-                _controllerMode = aimAction.Aim(camera.Rotation) ? ControllerMode.Focusing : ControllerMode.Free;
+                UnlockController(aimAction.Aim(camera.Rotation) ? ControllerMode.Focusing : ControllerMode.Free);
             }
             else
             {
@@ -121,19 +115,19 @@ namespace TheTrial.Players
                     if (_target is not null)
                     {
                         _target = null;
-                        _controllerMode = ControllerMode.Free;
+                        UnlockController(ControllerMode.Free);
                     }
                     else if (Physics.Raycast(camera.Pivot, camera.Direction, out var hit, lockFocusDist, enemyMask))
                     {
-                        _target = hit.transform;
-                        _controllerMode = ControllerMode.Locked;
+                        if (hit.transform.TryGetComponent(out _target))
+                            _controllerMode = ControllerMode.Locked;
                     }
                 }
                 else
                 {
                     // Do stuff for long press
                     aimAction.Cancel();
-                    _controllerMode = ControllerMode.Free;
+                    UnlockController(ControllerMode.Free);
                 }
 
                 _secondaryHold = 0;
@@ -151,6 +145,7 @@ namespace TheTrial.Players
                     FocusedMovement();
                     break;
                 case ControllerMode.Locked:
+                    LockedMovement();
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -182,9 +177,35 @@ namespace TheTrial.Players
             controller.Movement = _rotation * new Vector3(0, 0, Mathf.Min(1, displacement.magnitude));
         }
 
+        private void LockedMovement()
+        {
+            if (_target is null)
+            {
+                UnlockController(ControllerMode.Free);
+                return;
+            }
+
+            var direction = (_target.transform.position - controller.transform.position).normalized;
+            var targetRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+            controller.Rotation = Quaternion.RotateTowards(controller.Rotation, targetRotation,
+                characterRotationSpeed * Time.deltaTime);
+            
+            var displacement = _characterMovement.ReadValue<Vector2>();
+
+            if (displacement.sqrMagnitude < 0.01f)
+                return;
+            
+            controller.Movement = camera.YawRotation * new Vector3(displacement.x, 0, displacement.y).normalized;
+        }
+
         private void MoveCamera()
         {
             // Moving camera first.
+            if (_controllerMode == ControllerMode.Locked)
+            {
+                camera.LookAt = Quaternion.LookRotation((_target.Position - camera.Pivot).normalized);
+                return;
+            }
             camera.Move(_cameraMovement.ReadValue<Vector2>() * (cameraSpeed * Time.deltaTime));
         }
     }

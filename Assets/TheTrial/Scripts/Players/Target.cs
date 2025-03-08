@@ -3,9 +3,10 @@ using UnityEngine;
 
 namespace TheTrial.Players
 {
-    public class PlayerTarget : MonoBehaviour
+    public class Target : MonoBehaviour
     {
         public Vector3 viewOffset;
+        public Vector3 Position => transform.position + transform.rotation * viewOffset;
 
         private void OnDrawGizmos()
         {
