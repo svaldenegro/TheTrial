@@ -18,7 +18,9 @@ namespace TheTrial.Players
             Locked
         }
 
-        [Title("Components")] public ControllerBase controller;
+        [Title("Components")] // 
+        public ControllerBase controller;
+
         public JumpAction jumpAction;
         public RollAction rollAction;
         public ChargeAction chargeAction;
@@ -26,18 +28,21 @@ namespace TheTrial.Players
         public AimAction aimAction;
         public new GameplayCamera camera;
 
-        [Title("Parameters")]
-        public float cameraSpeed = 10, characterRotationSpeed = 100f, characterRotationSpeedRootMotion = 50f;
+        [Title("Parameters"), SerializeField] private float cameraSpeed = 10;
+        [SerializeField] private float characterRotationSpeed = 100f;
+        [SerializeField] private float characterRotationSpeedRootMotion = 50f;
+        [SerializeField] private float controllerModeHoldTime = 0.5f;
 
-        public float controllerModeHoldTime = 0.5f;
+        [Title("Lock Focus Parameters"), SerializeField] private LayerMask enemyMask;
+        [SerializeField] private float lockFocusDist = 10f;
 
-        [Title("Hidden", "Private variables")] [ShowInInspector, ReadOnly]
+        [Title("Hidden", "Private variables")] // 
+        [ShowInInspector, ReadOnly]
         private ControllerMode _controllerMode = ControllerMode.Free;
 
         private InputAction _characterMovement, _cameraMovement, _jump, _roll, _charge, _primary, _secondary;
         private Quaternion _rotation;
-        [ShowInInspector]
-        private Transform _target;
+        [ShowInInspector, ReadOnly] private Transform _target;
         private float _secondaryHold;
 
         private void Start()
@@ -101,7 +106,7 @@ namespace TheTrial.Players
                 _secondaryHold += Time.deltaTime;
                 if (_secondaryHold < controllerModeHoldTime)
                     return;
-                
+
                 Debug.DrawRay(transform.position + transform.rotation * Vector3.one, camera.Rotation * Vector3.forward,
                     Color.red);
                 _controllerMode = aimAction.Aim(camera.Rotation) ? ControllerMode.Focusing : ControllerMode.Free;
@@ -113,15 +118,24 @@ namespace TheTrial.Players
 
                 if (_secondaryHold < controllerModeHoldTime)
                 {
-                    // Do stuff for short press
+                    if (_target is not null)
+                    {
+                        _target = null;
+                        _controllerMode = ControllerMode.Free;
+                    }
+                    else if (Physics.Raycast(camera.Pivot, camera.Direction, out var hit, lockFocusDist, enemyMask))
+                    {
+                        _target = hit.transform;
+                        _controllerMode = ControllerMode.Locked;
+                    }
                 }
                 else
                 {
                     // Do stuff for long press
                     aimAction.Cancel();
+                    _controllerMode = ControllerMode.Free;
                 }
 
-                _controllerMode = ControllerMode.Free;
                 _secondaryHold = 0;
             }
         }
@@ -145,7 +159,7 @@ namespace TheTrial.Players
 
         private void FocusedMovement()
         {
-            var rotation = camera.Direction;
+            var rotation = camera.YawRotation;
             controller.Rotation = rotation;
             var displacement = _characterMovement.ReadValue<Vector2>();
             if (displacement.sqrMagnitude < 0.01f)
@@ -163,7 +177,7 @@ namespace TheTrial.Players
             controller.Rotation = Quaternion.RotateTowards(controller.Rotation, _rotation,
                 (controller.overrideMovement ? characterRotationSpeedRootMotion : characterRotationSpeed) *
                 Time.deltaTime);
-            _rotation = camera.Direction *
+            _rotation = camera.YawRotation *
                         Quaternion.LookRotation(new Vector3(displacement.x, 0, displacement.y).normalized);
             controller.Movement = _rotation * new Vector3(0, 0, Mathf.Min(1, displacement.magnitude));
         }
