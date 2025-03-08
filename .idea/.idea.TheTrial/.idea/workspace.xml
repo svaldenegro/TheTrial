@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9290d97a-51dd-48fc-b598-d6aae8c5114d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheTrial/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TheTrial/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RiderFlow.UserData/Editor/Scenes/Sections.Map/c608068eb63e4e6798d79ff97741d2b7.userdata" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RiderFlow.UserData/Editor/Scenes/Sections.Map/c608068eb63e4e6798d79ff97741d2b7.userdata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ControllerDebugRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ControllerDebugRoom.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ControllerDebugRoom/Global Volume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ControllerDebugRoom/Global Volume Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Prefabs/Controller.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Prefabs/Controller.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Cameras/GameplayCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Cameras/GameplayCamera.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/Players/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/Players/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/Players/PlayerTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/Players/Target.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/Players/PlayerTarget.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/Players/Target.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,11 +26,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7b75d297ff7746c5ae88b8d319fa524e1df200/db/2432d081/Transform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TheTrial/Scripts/Data/ScriptableData/ScriptableAnimatorFlag.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Animations/HumanoidAnimator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@ea5ab5b33a26/InputSystem/Actions/InputAction.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@ea5ab5b33a26/InputSystem/Actions/InputActionPhase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@ea5ab5b33a26/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -33,20 +40,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Seba",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Seba&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Builds/Linux/Development/TheTrial.x86_64" />
@@ -120,6 +128,8 @@
       <workItem from="1741197458583" duration="14290000" />
       <workItem from="1741222091628" duration="7231000" />
       <workItem from="1741268008213" duration="18573000" />
+      <workItem from="1741312870846" duration="2511000" />
+      <workItem from="1741396579980" duration="5103000" />
     </task>
     <servers />
   </component>
