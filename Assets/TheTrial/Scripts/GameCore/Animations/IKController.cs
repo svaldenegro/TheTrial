@@ -119,5 +119,11 @@ namespace TheTrial.GameCore.Animations
         {
             _lookAtData.targetWeight = 0;
         }
+        
+        // OnValidate try to get the animator
+        private void OnValidate()
+        {
+            animator ??= GetComponent<Animator>();
+        }
     }
 }

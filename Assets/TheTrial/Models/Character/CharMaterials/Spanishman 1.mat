@@ -8,10 +8,16 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Spanishman 1
-  m_Shader: {fileID: 4800000, guid: 944e4b210b3eb76cf9fa7116585dc577, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: df5bb027d94a6c44bb32b3c31ec1303f, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - TCP2_OUTLINE_MIN_MAX_SIZE
+  - TCP2_OUTLINE_TEXTURED_FRAGMENT
+  - TCP2_RAMP_BANDS_CRISP
+  - TCP2_REFLECTIONS_FRESNEL
+  - TCP2_RIM_LIGHTING_LIGHTMASK
+  - TCP2_SHADOW_LIGHT_COLOR
   - TCP2_UV_NORMALS_FULL
   - _RECEIVE_SHADOWS_OFF
   m_InvalidKeywords:
@@ -28,11 +34,6 @@ Material:
   - N_F_TRANSAFFSHA
   - N_F_TRANSAFFSHA_ON
   - N_F_USETLB_ON
-  - TCP2_OUTLINE_TEXTURED_FRAGMENT
-  - TCP2_RAMP_CRISP
-  - TCP2_REFLECTIONS_FRESNEL
-  - TCP2_RIM_LIGHTING_LIGHTMASK
-  - TCP2_SHADOW_LIGHT_COLOR
   - _CUSTOMLIGHTDIRECTIONFOLLOWOBJECTROTATION_OFF
   - _GIFLATSHADE_OFF
   - _GLOSSTEXTUREFOLLOWOBJECTROTATION_OFF
@@ -326,12 +327,12 @@ Material:
     - _OutlineExtrudeMethod: 0
     - _OutlineLightingType: 0
     - _OutlineLightingTypeURP: 0
-    - _OutlineMaxWidth: 1
+    - _OutlineMaxWidth: 15
     - _OutlineMinWidth: 1
-    - _OutlinePixelSizeType: 0
+    - _OutlinePixelSizeType: 3
     - _OutlineTextureLOD: 5
     - _OutlineTextureType: 2
-    - _OutlineWidth: 0.63
+    - _OutlineWidth: 1
     - _OutlineWidthAffectedByViewDistance: 0
     - _OutlineZPostionInCamera: 0
     - _OutlineZSmooth: 0.19
@@ -346,13 +347,13 @@ Material:
     - _PresAdju: 1
     - _QueueOffset: 0
     - _RELG: 1
-    - _RampBands: 4
+    - _RampBands: 3
     - _RampBandsSmoothing: 0.1
     - _RampOffset: 0
     - _RampScale: 1
     - _RampSmoothing: 1
-    - _RampThreshold: 0.32
-    - _RampType: 1
+    - _RampThreshold: 0.761
+    - _RampType: 3
     - _ReceiveShadows: 1
     - _ReceiveShadowsOff: 0
     - _ReduSha: 0.5
@@ -449,7 +450,7 @@ Material:
     - __EndGroup: 0
     - __dummy__: 0
     m_Colors:
-    - _BaseColor: {r: 0.49263287, g: 0.45218867, b: 0.45529976, a: 1}
+    - _BaseColor: {r: 0.2345635, g: 0.24578175, b: 0.257, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _CustomLightDirection: {r: 0, g: 0, b: 10, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
@@ -462,7 +463,7 @@ Material:
     - _ObjPosi: {r: 0, g: 0, b: 0, a: 0}
     - _ObjectForward: {r: 0, g: 0, b: 0, a: 0}
     - _ObjectRight: {r: 0, g: 0, b: 0, a: 0}
-    - _OutlineColor: {r: 0.076, g: 0.076, b: 0.076, a: 1}
+    - _OutlineColor: {r: 0.012286487, g: 0.012983031, b: 0.014443844, a: 1}
     - _OutlineColorVertex: {r: 0, g: 0, b: 0, a: 1}
     - _OutlineOffset: {r: 0, g: 0, b: 0, a: 1}
     - _OverallShadowColor: {r: 0, g: 0, b: 0, a: 1}

@@ -6,16 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="9290d97a-51dd-48fc-b598-d6aae8c5114d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TheTrial/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TheTrial/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RiderFlow.UserData/Editor/Scenes/Sections.Map/c608068eb63e4e6798d79ff97741d2b7.userdata" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RiderFlow.UserData/Editor/Scenes/Sections.Map/c608068eb63e4e6798d79ff97741d2b7.userdata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ControllerDebugRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ControllerDebugRoom.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ControllerDebugRoom/Global Volume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ControllerDebugRoom/Global Volume Profile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Prefabs/Controller.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Prefabs/Controller.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Cameras/GameplayCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Cameras/GameplayCamera.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/Players/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/Players/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/Players/PlayerTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/Players/Target.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/Players/PlayerTarget.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/Players/Target.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Models/Character/CharMaterials/Skiin.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Models/Character/CharMaterials/Skiin.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Models/Character/CharMaterials/Spanishman 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Models/Character/CharMaterials/Spanishman 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Models/Character/CharMaterials/Spanishman 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Models/Character/CharMaterials/Spanishman 2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Models/Character/CharMaterials/Spanishman 3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Models/Character/CharMaterials/Spanishman 3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Models/Character/CharMaterials/Spanishman.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Models/Character/CharMaterials/Spanishman.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Models/Character/CharRigTestSmooth.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Models/Character/CharRigTestSmooth.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Animations/AnimatorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheTrial/Scripts/GameCore/Animations/AnimatorController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +127,7 @@
       <workItem from="1741222091628" duration="7231000" />
       <workItem from="1741268008213" duration="18573000" />
       <workItem from="1741312870846" duration="2511000" />
-      <workItem from="1741396579980" duration="5103000" />
+      <workItem from="1741396579980" duration="6525000" />
     </task>
     <servers />
   </component>

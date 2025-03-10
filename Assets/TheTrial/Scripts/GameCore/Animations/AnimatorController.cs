@@ -94,5 +94,11 @@ namespace TheTrial.GameCore.Animations
             }
             return false;
         }
+        
+        // OnValidate try to get the animator
+        private void OnValidate()
+        {
+            animator ??= GetComponent<Animator>();
+        }
     }
 }
