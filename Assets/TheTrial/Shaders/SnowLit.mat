@@ -80,7 +80,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _BlendHeightStrength: 1
-    - _Offset: 0.891
+    - _Offset: 0.957
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Strength: 50
